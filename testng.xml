@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Enterprise API Automation Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.enterprise.api.listeners.TestListener"/>
+        <listener class-name="com.enterprise.api.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Restful-Booker Tests">
+        <classes>
+            <class name="com.enterprise.api.tests.booker.BookerAuthTests"/>
+            <class name="com.enterprise.api.tests.booker.CreateBookingTests"/>
+            <class name="com.enterprise.api.tests.booker.GetBookingTests"/>
+            <class name="com.enterprise.api.tests.booker.UpdateBookingTests"/>
+            <class name="com.enterprise.api.tests.booker.DeleteBookingTests"/>
+        </classes>
+    </test>
+
+    <test name="DummyJSON Tests">
+        <classes>
+            <class name="com.enterprise.api.tests.dummyjson.DummyJsonAuthTests"/>
+            <class name="com.enterprise.api.tests.dummyjson.ProductCrudTests"/>
+            <class name="com.enterprise.api.tests.dummyjson.ProductValidationTests"/>
+            <class name="com.enterprise.api.tests.dummyjson.UserManagementTests"/>
+            <class name="com.enterprise.api.tests.dummyjson.CartManagementTests"/>
+        </classes>
+    </test>
+
+    <test name="ReqRes Tests">
+        <classes>
+            <class name="com.enterprise.api.tests.reqres.ReqresUserTests"/>
+            <class name="com.enterprise.api.tests.reqres.ReqresAuthTests"/>
+        </classes>
+    </test>
+
+    <test name="HttpBin Protocol Tests">
+        <classes>
+            <class name="com.enterprise.api.tests.httpbin.HttpStatusCodesTests"/>
+            <class name="com.enterprise.api.tests.httpbin.HttpHeadersAndAuthTests"/>
+            <class name="com.enterprise.api.tests.httpbin.HttpMethodsTests"/>
+        </classes>
+    </test>
+
+    <test name="End-to-End Business Scenarios">
+        <classes>
+            <class name="com.enterprise.api.tests.e2e.E2EBookingLifecycleTest"/>
+            <class name="com.enterprise.api.tests.e2e.E2EEcommerceOrderWorkflowTest"/>
+        </classes>
+    </test>
+
+</suite>

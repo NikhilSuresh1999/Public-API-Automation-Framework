@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Enterprise API Smoke Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.enterprise.api.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Smoke Sanity Tests">
+        <classes>
+            <class name="com.enterprise.api.tests.booker.BookerAuthTests">
+                <methods>
+                    <include name="testAuthWithValidCredentials"/>
+                    <include name="testPingHealthCheck"/>
+                </methods>
+            </class>
+            <class name="com.enterprise.api.tests.dummyjson.DummyJsonAuthTests">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                </methods>
+            </class>
+            <class name="com.enterprise.api.tests.e2e.E2EBookingLifecycleTest"/>
+            <class name="com.enterprise.api.tests.e2e.E2EEcommerceOrderWorkflowTest"/>
+        </classes>
+    </test>
+
+</suite>
+

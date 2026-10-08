@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserSchema",
+  "type": "object",
+  "required": ["id", "firstName", "lastName", "email"],
+  "properties": {
+    "id": { "type": "integer" },
+    "firstName": { "type": "string" },
+    "lastName": { "type": "string" },
+    "maidenName": { "type": "string" },
+    "age": { "type": "integer" },
+    "gender": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "username": { "type": "string" },
+    "birthDate": { "type": "string" },
+    "image": { "type": "string" },
+    "bloodGroup": { "type": "string" },
+    "height": { "type": "number" },
+    "weight": { "type": "number" },
+    "eyeColor": { "type": "string" }
+  }
+}
+
