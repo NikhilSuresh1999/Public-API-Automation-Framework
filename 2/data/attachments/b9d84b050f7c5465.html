@@ -1,0 +1,49 @@
+<div>PUT to https://dummyjson.com/products/1</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Completely Updated Title&quot;,
+    &quot;description&quot;: &quot;Commodi provident vero corporis rerum fugiat aperiam. Quam fugit maiores fugit iste quibusdam iusto. Dignissimos pariatur a saepe. Voluptatibus ab pariatur.&quot;,
+    &quot;price&quot;: 1168.76,
+    &quot;discountPercentage&quot;: 28.67,
+    &quot;rating&quot;: 3.55,
+    &quot;stock&quot;: 65,
+    &quot;brand&quot;: &quot;Macejkovic Group&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1680/1050&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/1920/1200&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X PUT &#39;https://dummyjson.com/products/1&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Completely Updated Title&quot;,
+    &quot;description&quot;: &quot;Commodi provident vero corporis rerum fugiat aperiam. Quam fugit maiores fugit iste quibusdam iusto. Dignissimos pariatur a saepe. Voluptatibus ab pariatur.&quot;,
+    &quot;price&quot;: 1168.76,
+    &quot;discountPercentage&quot;: 28.67,
+    &quot;rating&quot;: 3.55,
+    &quot;stock&quot;: 65,
+    &quot;brand&quot;: &quot;Macejkovic Group&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1680/1050&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/1920/1200&quot;
+    ]
+}&#39;
+    </div>
+

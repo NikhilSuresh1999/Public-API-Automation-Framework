@@ -1,0 +1,45 @@
+<div>POST to https://dummyjson.com/carts/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;userId&quot;: 1,
+    &quot;products&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;quantity&quot;: 4
+        },
+        {
+            &quot;id&quot;: 33,
+            &quot;quantity&quot;: 1
+        }
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/carts/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;userId&quot;: 1,
+    &quot;products&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;quantity&quot;: 4
+        },
+        {
+            &quot;id&quot;: 33,
+            &quot;quantity&quot;: 1
+        }
+    ]
+}&#39;
+    </div>
+

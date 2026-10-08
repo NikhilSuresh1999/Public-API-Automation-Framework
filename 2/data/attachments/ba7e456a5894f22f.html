@@ -1,0 +1,49 @@
+<div>POST to https://dummyjson.com/products/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Lightweight Concrete Keyboard&quot;,
+    &quot;description&quot;: &quot;Harum iusto harum itaque odio pariatur alias. Qui sint est voluptate ab perspiciatis amet adipisci. Accusamus error necessitatibus itaque laboriosam ea reiciendis suscipit.&quot;,
+    &quot;price&quot;: 1198.29,
+    &quot;discountPercentage&quot;: 18.69,
+    &quot;rating&quot;: 4.68,
+    &quot;stock&quot;: 488,
+    &quot;brand&quot;: &quot;Altenwerth LLC&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1600/1200&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/1920/1200&quot;,
+        &quot;https://picsum.photos/1680/1050&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/products/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Lightweight Concrete Keyboard&quot;,
+    &quot;description&quot;: &quot;Harum iusto harum itaque odio pariatur alias. Qui sint est voluptate ab perspiciatis amet adipisci. Accusamus error necessitatibus itaque laboriosam ea reiciendis suscipit.&quot;,
+    &quot;price&quot;: 1198.29,
+    &quot;discountPercentage&quot;: 18.69,
+    &quot;rating&quot;: 4.68,
+    &quot;stock&quot;: 488,
+    &quot;brand&quot;: &quot;Altenwerth LLC&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1600/1200&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/1920/1200&quot;,
+        &quot;https://picsum.photos/1680/1050&quot;
+    ]
+}&#39;
+    </div>
+
