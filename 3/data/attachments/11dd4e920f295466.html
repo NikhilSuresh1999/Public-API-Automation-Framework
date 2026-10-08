@@ -1,0 +1,49 @@
+<div>POST to https://dummyjson.com/products/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Durable Aluminum Wallet&quot;,
+    &quot;description&quot;: &quot;Aperiam totam consequuntur ipsa velit quis aliquid fuga. Quia quos praesentium fugit quia beatae cumque. Quae ullam fugit itaque ipsam consequatur. Odit quas ullam quasi neque enim minus.&quot;,
+    &quot;price&quot;: 1894.66,
+    &quot;discountPercentage&quot;: 8.24,
+    &quot;rating&quot;: 4.06,
+    &quot;stock&quot;: 209,
+    &quot;brand&quot;: &quot;Conroy Inc&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1680/1050&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/640/350&quot;,
+        &quot;https://picsum.photos/1366/768&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/products/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Durable Aluminum Wallet&quot;,
+    &quot;description&quot;: &quot;Aperiam totam consequuntur ipsa velit quis aliquid fuga. Quia quos praesentium fugit quia beatae cumque. Quae ullam fugit itaque ipsam consequatur. Odit quas ullam quasi neque enim minus.&quot;,
+    &quot;price&quot;: 1894.66,
+    &quot;discountPercentage&quot;: 8.24,
+    &quot;rating&quot;: 4.06,
+    &quot;stock&quot;: 209,
+    &quot;brand&quot;: &quot;Conroy Inc&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1680/1050&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/640/350&quot;,
+        &quot;https://picsum.photos/1366/768&quot;
+    ]
+}&#39;
+    </div>
+

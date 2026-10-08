@@ -1,0 +1,49 @@
+<div>PUT to https://dummyjson.com/products/1</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Completely Updated Title&quot;,
+    &quot;description&quot;: &quot;Libero praesentium amet maiores. Nihil tempora asperiores aliquam cumque saepe deserunt necessitatibus. Vel voluptas temporibus quam.&quot;,
+    &quot;price&quot;: 1641.49,
+    &quot;discountPercentage&quot;: 24.92,
+    &quot;rating&quot;: 3.89,
+    &quot;stock&quot;: 479,
+    &quot;brand&quot;: &quot;Walsh-Howell&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/720/348&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/1366/768&quot;,
+        &quot;https://picsum.photos/1680/1050&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X PUT &#39;https://dummyjson.com/products/1&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Completely Updated Title&quot;,
+    &quot;description&quot;: &quot;Libero praesentium amet maiores. Nihil tempora asperiores aliquam cumque saepe deserunt necessitatibus. Vel voluptas temporibus quam.&quot;,
+    &quot;price&quot;: 1641.49,
+    &quot;discountPercentage&quot;: 24.92,
+    &quot;rating&quot;: 3.89,
+    &quot;stock&quot;: 479,
+    &quot;brand&quot;: &quot;Walsh-Howell&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/720/348&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/1366/768&quot;,
+        &quot;https://picsum.photos/1680/1050&quot;
+    ]
+}&#39;
+    </div>
+
