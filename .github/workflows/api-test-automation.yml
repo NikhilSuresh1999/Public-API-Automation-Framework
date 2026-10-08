@@ -2,9 +2,9 @@ name: Enterprise API Test Automation CI/CD
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, public-api-automation ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, public-api-automation ]
   schedule:
     # Run nightly regression at midnight UTC
     - cron: '0 0 * * *'
