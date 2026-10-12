@@ -1,0 +1,49 @@
+<div>POST to https://dummyjson.com/products/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Practical Marble Gloves&quot;,
+    &quot;description&quot;: &quot;Molestiae incidunt sint sit consectetur optio. Amet molestiae asperiores ex sunt. Error harum quasi.&quot;,
+    &quot;price&quot;: 130.13,
+    &quot;discountPercentage&quot;: 4.17,
+    &quot;rating&quot;: 3.43,
+    &quot;stock&quot;: 337,
+    &quot;brand&quot;: &quot;Schmidt, Jakubowski and Bechtelar&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1024/768&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/640/350&quot;,
+        &quot;https://picsum.photos/1024/768&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/products/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Practical Marble Gloves&quot;,
+    &quot;description&quot;: &quot;Molestiae incidunt sint sit consectetur optio. Amet molestiae asperiores ex sunt. Error harum quasi.&quot;,
+    &quot;price&quot;: 130.13,
+    &quot;discountPercentage&quot;: 4.17,
+    &quot;rating&quot;: 3.43,
+    &quot;stock&quot;: 337,
+    &quot;brand&quot;: &quot;Schmidt, Jakubowski and Bechtelar&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1024/768&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/640/350&quot;,
+        &quot;https://picsum.photos/1024/768&quot;
+    ]
+}&#39;
+    </div>
+
