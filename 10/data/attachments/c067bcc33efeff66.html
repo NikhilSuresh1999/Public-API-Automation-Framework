@@ -1,0 +1,49 @@
+<div>POST to https://dummyjson.com/products/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Enormous Iron Clock&quot;,
+    &quot;description&quot;: &quot;Perspiciatis quis aspernatur quis nobis sequi fugit. Assumenda est velit quibusdam odio ad. Asperiores beatae nisi.&quot;,
+    &quot;price&quot;: 1533.55,
+    &quot;discountPercentage&quot;: 24.14,
+    &quot;rating&quot;: 4.91,
+    &quot;stock&quot;: 177,
+    &quot;brand&quot;: &quot;Wehner and Sons&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1280/1024&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/640/200&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/products/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Enormous Iron Clock&quot;,
+    &quot;description&quot;: &quot;Perspiciatis quis aspernatur quis nobis sequi fugit. Assumenda est velit quibusdam odio ad. Asperiores beatae nisi.&quot;,
+    &quot;price&quot;: 1533.55,
+    &quot;discountPercentage&quot;: 24.14,
+    &quot;rating&quot;: 4.91,
+    &quot;stock&quot;: 177,
+    &quot;brand&quot;: &quot;Wehner and Sons&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/1280/1024&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/640/200&quot;
+    ]
+}&#39;
+    </div>
+
