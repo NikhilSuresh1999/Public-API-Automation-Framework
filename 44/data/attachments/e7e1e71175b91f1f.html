@@ -1,0 +1,49 @@
+<div>POST to https://dummyjson.com/products/add</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;title&quot;: &quot;Incredible Cotton Watch&quot;,
+    &quot;description&quot;: &quot;Doloremque tenetur quae quisquam quisquam quae. Exercitationem fugit nihil quas.&quot;,
+    &quot;price&quot;: 1340.0,
+    &quot;discountPercentage&quot;: 11.54,
+    &quot;rating&quot;: 3.36,
+    &quot;stock&quot;: 45,
+    &quot;brand&quot;: &quot;O&#39;Kon-Koepp&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/640/480&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/1920/1200&quot;
+    ]
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: application/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://dummyjson.com/products/add&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;title&quot;: &quot;Incredible Cotton Watch&quot;,
+    &quot;description&quot;: &quot;Doloremque tenetur quae quisquam quisquam quae. Exercitationem fugit nihil quas.&quot;,
+    &quot;price&quot;: 1340.0,
+    &quot;discountPercentage&quot;: 11.54,
+    &quot;rating&quot;: 3.36,
+    &quot;stock&quot;: 45,
+    &quot;brand&quot;: &quot;O&#39;Kon-Koepp&quot;,
+    &quot;category&quot;: &quot;smartphones&quot;,
+    &quot;thumbnail&quot;: &quot;https://picsum.photos/640/480&quot;,
+    &quot;images&quot;: [
+        &quot;https://picsum.photos/320/200&quot;,
+        &quot;https://picsum.photos/1920/1200&quot;
+    ]
+}&#39;
+    </div>
+
